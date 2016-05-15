@@ -12,6 +12,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.fyxridd.lib:spigot-api:1.8.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.fyxridd.lib:ProtocolLib:1.8.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.fyxridd.lib:PacketWrapper:1.8.8" level="project" />
     <orderEntry type="module" module-name="LibCore" scope="PROVIDED" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.guava:guava:19.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.json:json:20140107" level="project" />
