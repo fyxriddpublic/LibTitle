@@ -1,7 +1,7 @@
 package com.fyxridd.lib.title.config;
 
-import com.fyxridd.lib.config.api.basic.Path;
-import com.fyxridd.lib.config.api.limit.Min;
+import com.fyxridd.lib.core.api.config.basic.Path;
+import com.fyxridd.lib.core.api.config.limit.Min;
 
 public class TitleConfig {
     @Path("time")

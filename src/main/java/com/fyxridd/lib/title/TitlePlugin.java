@@ -1,6 +1,6 @@
 package com.fyxridd.lib.title;
 
-import com.fyxridd.lib.config.api.ConfigApi;
+import com.fyxridd.lib.core.api.config.ConfigApi;
 import com.fyxridd.lib.core.api.plugin.SimplePlugin;
 import com.fyxridd.lib.title.config.TitleConfig;
 import com.fyxridd.lib.title.manager.TitleManager;
