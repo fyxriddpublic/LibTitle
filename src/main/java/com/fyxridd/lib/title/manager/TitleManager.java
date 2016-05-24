@@ -4,7 +4,7 @@ import com.comphenix.packetwrapper.WrapperPlayServerTitle;
 import com.comphenix.protocol.wrappers.EnumWrappers;
 import com.comphenix.protocol.wrappers.WrappedChatComponent;
 import com.fyxridd.lib.core.api.config.ConfigApi;
-import com.fyxridd.lib.core.config.ConfigManager;
+import com.fyxridd.lib.core.api.config.Setter;
 import com.fyxridd.lib.title.TitlePlugin;
 import com.fyxridd.lib.title.config.TitleConfig;
 import org.bukkit.Bukkit;
@@ -39,7 +39,7 @@ public class TitleManager {
 
     public TitleManager() {
         //添加配置监听
-        ConfigApi.addListener(TitlePlugin.instance.pn, TitleConfig.class, new ConfigManager.Setter<TitleConfig>() {
+        ConfigApi.addListener(TitlePlugin.instance.pn, TitleConfig.class, new Setter<TitleConfig>() {
             @Override
             public void set(TitleConfig value) {
                 config = value;
