@@ -51,9 +51,11 @@ public class TitleManager {
             Bukkit.getPluginManager().registerEvent(PlayerQuitEvent.class, TitlePlugin.instance, EventPriority.LOW, new EventExecutor() {
                 @Override
                 public void execute(Listener listener, Event e) throws EventException {
-                    PlayerQuitEvent event = (PlayerQuitEvent) e;
-                    infos.remove(event.getPlayer());
-                    waits.remove(event.getPlayer());
+                    if (e instanceof PlayerQuitEvent) {
+                        PlayerQuitEvent event = (PlayerQuitEvent) e;
+                        infos.remove(event.getPlayer());
+                        waits.remove(event.getPlayer());
+                    }
                 }
             }, TitlePlugin.instance);
         }
